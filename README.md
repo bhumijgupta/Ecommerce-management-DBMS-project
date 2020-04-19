@@ -74,7 +74,7 @@ You can directly copy and paste all the commands from the text given here into t
         c_pass VARCHAR(10) NOT NULL,
         Name VARCHAR(20) NOT NULL,
         Address VARCHAR(20) NOT NULL,
-        Pincode NUMBER(6) NOT NULL,
+        Pincode int NOT NULL,
         Phone_number_s number(10) NOT NULL,
         PRIMARY KEY (Customer_id),
         Cart_id VARCHAR(7) NOT NULL,
@@ -92,7 +92,7 @@ You can directly copy and paste all the commands from the text given here into t
 
     CREATE TABLE Seller_Phone_num
     (
-        Phone_num NUMBER(10) NOT NULL,
+        Phone_num int NOT NULL,
         Seller_id VARCHAR(6) NOT NULL,
         PRIMARY KEY (Phone_num, Seller_id),
         FOREIGN KEY (Seller_id) REFERENCES Seller(Seller_id)
@@ -109,7 +109,7 @@ You can directly copy and paste all the commands from the text given here into t
         PRIMARY KEY (payment_id),
         FOREIGN KEY (Customer_id) REFERENCES Customer(Customer_id),
         FOREIGN KEY (Cart_id) REFERENCES Cart(Cart_id),
-        total_amount numeric(6)
+        total_amount int
     );
 
     CREATE TABLE Product
@@ -120,8 +120,8 @@ You can directly copy and paste all the commands from the text given here into t
         P_Size VARCHAR(2) NOT NULL,
         Gender CHAR(1) NOT NULL,
         Commission NUMBER(2) NOT NULL,
-        Cost NUMBER(5) NOT NULL,
-        Quantity NUMBER(2) NOT NULL,
+        Cost int NOT NULL,
+        Quantity int NOT NULL,
         Seller_id VARCHAR(6),
         PRIMARY KEY (Product_id),
         FOREIGN KEY (Seller_id) REFERENCES Seller(Seller_id)
@@ -130,7 +130,7 @@ You can directly copy and paste all the commands from the text given here into t
 
     CREATE TABLE Cart_item
     (
-        Quantity_wished NUMBER(1) NOT NULL,
+        Quantity_wished int NOT NULL,
         Date_Added DATE NOT NULL,
         Cart_id VARCHAR(7) NOT NULL,
         Product_id VARCHAR(7) NOT NULL,
