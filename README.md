@@ -1,4 +1,4 @@
-# Ecommerce Management DBMS Project
+# DBMS Project
 
 As a part of our University Curriculum, we made this project for Database Management Systems (DBMS) - ITE1003.<br>
 This project contains theoretical as well as implementation in SQL.<br>
@@ -8,7 +8,7 @@ If you liked the repo do :star: it.
 
 Oracle SQL Server (or) Oracle Community Edition
 
-## Contents
+## Requirements
 
 - Mini world and Project Description
 - Basic structure
@@ -47,11 +47,11 @@ Amongst many things that an online site requires the most important is a databas
 - Admin can view details of customer who have not purchased anything.
 - Admin can view total profit earned from the website.
 
-### 2.2 Entity Relation Diagram
+### 2.2 Entity Relation Diagram or E-R Diagram
 
 ![ER diagram](https://github.com/bhumijgupta/Ecommerce-management-DBMS-project/raw/master/images/new_er.png)
 
-### 2.3 Relational Database Schema
+### 2.3 Relational Database Schema or RDBMS
 
 ![Relational diagram](https://github.com/bhumijgupta/Ecommerce-management-DBMS-project/raw/master/images/new_relational.png)
 
@@ -59,7 +59,7 @@ Amongst many things that an online site requires the most important is a databas
 
 You can directly copy and paste all the commands from the text given here into the SQL console to create and insert values into your table.
 
-### 3.1 Creating Tables
+### 3.1 Creating Tables For Data Storing
 
 ```sql
     CREATE TABLE Cart
